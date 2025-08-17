@@ -1,0 +1,33 @@
+.header ul, li {
+  list-style-type: none;
+  list-style-position: inside;
+  display: inline;
+  margin: 0;
+  padding: 0;
+
+}
+.header h1 {
+  font-size: 25px;
+
+}
+.jumbotron h1  {
+  font-weight: bold;
+  background-color: #C2FFAD;
+  border: 5px double #45A42E;
+  /*position: relative;*/
+  float: left;
+  padding: 0 10px;
+}
+.image {
+  float: right;
+  max-width: 30%;
+  max-height: 30%;
+}
+.button {
+  background-color: white;
+  text-align: center;
+  color: black;
+  border: 2px solid #000000;
+  background-color: #C2FFAD;
+  font-weight: bold;
+}

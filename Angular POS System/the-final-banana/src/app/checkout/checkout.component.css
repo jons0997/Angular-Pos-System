@@ -1,0 +1,15 @@
+.button {
+  background-color: white;
+  text-align: center;
+  color: black;
+  border: 2px solid #00b33c;
+  background-color: #FF3C3C;
+  font-weight: bold;
+  font-size: 15px;
+}
+.checkout {
+  border: 5px double #45A42E;
+  background-color: #C2FFAD;
+    font-weight: bold;
+    width: 30%;
+}

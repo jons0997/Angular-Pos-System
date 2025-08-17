@@ -1,0 +1,38 @@
+.button {
+  background-color: white;
+  text-align: center;
+  color: black;
+  border: 2px solid #00b33c;
+  background-color: #C2FFAD;
+  font-weight: bold;
+  font-size: 15px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 300px;
+  height: 300px;
+  border: 5px double #45A42E;
+  font-size: 20px;
+  float: left;
+}
+
+.container {
+  padding: 2px 16px;
+}
+.cart {
+font-weight: bold;
+border: 5px double #45A42E;
+background-color: #C2FFAD;
+width: 30%;
+}
+.showcart {
+  font-weight: bold;
+}
+.totalcost {
+  font-weight: bold;
+  border: 5px double #45A42E;
+  background-color: #C2FFAD;
+  position: relative;
+  width: 30%;
+}

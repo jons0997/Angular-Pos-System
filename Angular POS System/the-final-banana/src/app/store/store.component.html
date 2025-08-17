@@ -1,0 +1,36 @@
+<div class="cart" *ngIf="!isCartEmpty">
+
+  <p> Items in Cart: {{ cartCount }} </p>
+  <p> Cost of Cart: ${{ cartCost }} </p>
+</div>
+
+<br/>
+
+<button class="button"(click) = "toggleCart()" > {{ buttonName }} </button>
+<button class="button"(click) = "deleteCart()" > Delete Cart </button>
+<ng-container *ngIf="showCartItems">
+  <div class="showcart" *ngFor="let amount of itemsInCart; index as i" >
+    <p *ngIf="amount">
+        {{ items[i].name }} {{ items[i].cost }} x{{ amount }}
+        <button class="button" (click) = "removeItemFromCart(i)"> x </button>
+    </p>
+  </div>
+  <br>
+  <div class="totalcost">
+  <p> Total Cost: ${{ cartCost }} </p>
+    </div>
+</ng-container>
+
+<br>
+<br>
+<div *ngFor="let item of items">
+  <div class="card" *ngIf="item.inventory > 0"  >
+    <div class="container">
+      <button class="button"(click)="addToCart(item)"> Add to Cart </button>
+      <p> {{ item.name }} : ${{ item.cost }} </p>
+      <p>  {{ item.description }}</p>
+      <p> Amount in Inventory: {{ item.inventory }} </p>
+      <br>
+    </div>
+  </div>
+</div>
